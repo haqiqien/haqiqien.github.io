@@ -1,6 +1,7 @@
 import { init as initTheme } from './theme.js';
 import { init as initNav } from './nav.js';
 import { init as initRender } from './render.js';
+import { init as initProjectFilter } from './project-filter.js';
 import { init as initReveal } from './reveal.js';
 import { init as initRoles } from './roles.js';
 import { init as initHeroCanvas } from './hero-canvas.js';
@@ -15,6 +16,8 @@ import { init as initContact } from './contact.js';
 
 initTheme();
 initRender();
+const destroyProjectFilter = initProjectFilter();
+window.addEventListener('pagehide', destroyProjectFilter, { once: true });
 initNav();
 const destroyContact = initContact();
 window.addEventListener('pagehide', destroyContact, { once: true });
