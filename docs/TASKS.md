@@ -120,7 +120,7 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 ---
 
 ## Optional (P2), only after Phase 11 passes
-- [x] `terminal.js` (I-10): accessible terminal, lazy-loaded from palette or Konami code (commands, Escape, and focus cycling verified in Chrome/Firefox/WebKit; reduced motion and 320–1440px layouts checked)
+- [x] `terminal.js` (I-10): accessible terminal, lazy-loaded from palette or Konami code (commands, Escape, and focus cycling verified in Chrome/Firefox/WebKit; reduced motion and 320–1440px layouts checked; deployed terminal and both triggers verified live)
 - [ ] `game.js` (I-14): Bug Catcher, only launched from palette/terminal
 - [ ] Tag filter for projects
 - [ ] Static blog pages (plain HTML) linked from projects
