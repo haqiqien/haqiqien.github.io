@@ -123,6 +123,6 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 - [x] `terminal.js` (I-10): accessible terminal, lazy-loaded from palette or Konami code (commands, Escape, and focus cycling verified in Chrome/Firefox/WebKit; reduced motion and 320–1440px layouts checked; deployed terminal and both triggers verified live)
 - [x] `game.js` (I-14): 30-second canvas Bug Catcher with keyboard catch button, reduced-motion static bugs, saved best score, and pause on hidden/offscreen; lazy palette and terminal launches, Escape and focus return checked in Chrome/Firefox/WebKit, 320–1440px layouts checked, and blocked storage handled without errors
 - [x] Tag filter for projects (keyboard-operable filters generated from non-placeholder project data; controls stay hidden until real project tags exist; tested with a temporary browser fixture)
-- [ ] Static blog pages (plain HTML) linked from projects
+- [ ] Static blog pages (plain HTML) linked from projects (deferred: `docs/CONTENT.md` still has no real project details or article content, and the project placeholders are to remain until data is supplied)
 - [ ] Lightweight, cookie-less analytics
 
