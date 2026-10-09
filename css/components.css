@@ -182,6 +182,86 @@
 .palette__option-hint { color: var(--text-muted); font-size: .8rem; }
 .palette__empty { padding: var(--space-3); color: var(--text-muted); }
 
+.terminal {
+  width: min(calc(100% - 2 * var(--space-4)), 760px);
+  max-width: none;
+  max-height: min(86vh, 760px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+}
+
+.terminal::backdrop { background: var(--overlay); }
+
+.terminal__panel {
+  display: grid;
+  gap: var(--space-4);
+  padding: clamp(var(--space-4), 4vw, var(--space-8));
+}
+
+.terminal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.terminal__title { margin: 0; font-size: 1.15rem; }
+.terminal__description { margin: 0; color: var(--text-muted); }
+
+.terminal__output {
+  min-height: 12rem;
+  max-height: min(48vh, 360px);
+  padding: var(--space-4);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-heading);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.terminal__line { margin: 0 0 var(--space-2); }
+.terminal__line:last-child { margin-bottom: 0; }
+.terminal__line--command { color: var(--accent-text); font-weight: 700; }
+.terminal__line--system { color: var(--text-muted); }
+
+.terminal__form { display: grid; gap: var(--space-2); }
+.terminal__label { font-weight: 700; }
+
+.terminal__input-row {
+  display: flex;
+  min-width: 0;
+  min-height: 48px;
+  align-items: center;
+  gap: var(--space-2);
+  padding-inline: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+}
+
+.terminal__prompt { color: var(--accent-text); font-family: var(--font-heading); }
+
+.terminal__input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+}
+
+.terminal__input:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.terminal__submit { justify-self: start; }
+
 @media (min-width: 768px) {
   .palette { margin-top: 12vh; }
   .palette__panel { padding: var(--space-6); }

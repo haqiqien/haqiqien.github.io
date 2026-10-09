@@ -23,6 +23,9 @@ export function init() {
   const status = dialog?.querySelector('[data-palette-status]');
   const themeButton = document.querySelector('[data-theme-toggle]');
   if (!dialog || !input || !list || !closeButton || !status) return () => {};
+  const terminalEnabled = config.features.terminal
+    && typeof HTMLDialogElement !== 'undefined'
+    && typeof HTMLDialogElement.prototype.showModal === 'function';
 
   const commands = [
     ...SECTIONS.map(([id, label, keywords]) => ({
@@ -76,13 +79,10 @@ export function init() {
         status.textContent = 'Alamat email berhasil disalin.';
       }
     },
-    {
+    ...(terminalEnabled ? [{
       id: 'open-terminal', label: 'Buka terminal interaktif', keywords: 'terminal easter egg perintah', hint: 'Eksperimen',
-      run: () => {
-        document.dispatchEvent(new Event('portfolio:open-terminal'));
-        status.textContent = 'Terminal interaktif belum tersedia.';
-      }
-    }
+      run: () => document.dispatchEvent(new Event('portfolio:open-terminal'))
+    }] : [])
   ];
 
   let filtered = commands;
@@ -150,9 +150,16 @@ export function init() {
   const execute = async (index = activeIndex) => {
     const command = filtered[index];
     if (!command) return;
-    const keepOpen = command.id === 'copy-email' || command.id === 'open-terminal';
-    if (!keepOpen) close();
+    const keepOpen = command.id === 'copy-email';
+    let closed = null;
+    if (!keepOpen) {
+      if (command.id === 'open-terminal') {
+        closed = new Promise((resolve) => dialog.addEventListener('close', resolve, { once: true }));
+      }
+      close();
+    }
     try {
+      if (closed) await closed;
       await command.run();
       if (!keepOpen) status.textContent = '';
     } catch {

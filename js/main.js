@@ -18,6 +18,47 @@ initRender();
 initNav();
 const destroyContact = initContact();
 window.addEventListener('pagehide', destroyContact, { once: true });
+const KONAMI_SEQUENCE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiIndex = 0;
+let terminalModulePromise;
+let destroyTerminal = null;
+const terminalSupported = typeof HTMLDialogElement !== 'undefined'
+  && typeof HTMLDialogElement.prototype.showModal === 'function';
+const requestTerminal = async () => {
+  if (!config.features.terminal || !terminalSupported) return;
+  try {
+    const terminal = await (terminalModulePromise ||= import('./terminal.js'));
+    if (!destroyTerminal) {
+      destroyTerminal = terminal.init();
+      window.addEventListener('pagehide', destroyTerminal, { once: true });
+    }
+    document.dispatchEvent(new Event('portfolio:terminal-open'));
+  } catch {
+    // The rest of the page remains usable if the optional module cannot load.
+  }
+};
+const onTerminalRequest = () => requestTerminal();
+const onKonamiKey = (event) => {
+  const target = event.target;
+  const isTyping = target instanceof HTMLElement
+    && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName));
+  if (isTyping || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
+  const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+  if (key === KONAMI_SEQUENCE[konamiIndex]) konamiIndex += 1;
+  else konamiIndex = key === KONAMI_SEQUENCE[0] ? 1 : 0;
+  if (konamiIndex === KONAMI_SEQUENCE.length) {
+    konamiIndex = 0;
+    document.dispatchEvent(new Event('portfolio:open-terminal'));
+  }
+};
+if (config.features.terminal && terminalSupported) {
+  document.addEventListener('portfolio:open-terminal', onTerminalRequest);
+  document.addEventListener('keydown', onKonamiKey);
+  window.addEventListener('pagehide', () => {
+    document.removeEventListener('portfolio:open-terminal', onTerminalRequest);
+    document.removeEventListener('keydown', onKonamiKey);
+  }, { once: true });
+}
 let paletteModulePromise;
 let destroyPalette = null;
 const requestPalette = async () => {
