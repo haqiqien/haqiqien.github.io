@@ -220,6 +220,19 @@
     </div>
   </dialog>
 
+  <dialog class="bug-game" data-bug-game aria-labelledby="bug-game-title" aria-describedby="bug-game-instructions">
+    <div class="bug-game__panel">
+      <header class="bug-game__header">
+        <div><h2 class="bug-game__title" id="bug-game-title">Bug Catcher</h2><p class="bug-game__instructions" id="bug-game-instructions">Tangkap bug di kanvas dalam 30 detik. Gunakan tombol “Tangkap bug berikutnya” sebagai alternatif keyboard.</p></div>
+        <button class="button button--small button--secondary" type="button" data-game-close>Tutup</button>
+      </header>
+      <div class="bug-game__stats"><p>Skor: <strong data-game-score>0</strong></p><p>Waktu: <strong data-game-time>30</strong> detik</p><p>Rekor: <strong data-game-best>0</strong></p></div>
+      <canvas class="bug-game__board" data-game-board width="640" height="288" role="img" aria-label="Kanvas permainan. Sentuh atau klik bug untuk menangkapnya."></canvas>
+      <div class="bug-game__actions"><button class="button button--primary" type="button" data-game-catch>Tangkap bug berikutnya</button><button class="button button--secondary" type="button" data-game-restart>Mulai ulang</button></div>
+      <p class="bug-game__status" data-game-status role="status" aria-live="polite">Permainan siap.</p>
+    </div>
+  </dialog>
+
   <noscript>
     <div class="noscript-note container">
       <p>JavaScript tidak aktif. Proyek: <a href="#projects">detail belum tersedia</a>. <a href="#github">GitHub</a>: username belum tersedia. Tautan lain: <a href="https://linkedin.com/in/juyusadinulhaq" rel="noopener noreferrer">LinkedIn</a> · <a href="mailto:juyushaqiqi@gmail.com">Email</a>.</p>

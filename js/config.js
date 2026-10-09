@@ -20,6 +20,6 @@ export const config = {
     stickers: true,
     palette: true,
     terminal: true,
-    game: false
+    game: true
   }
 };

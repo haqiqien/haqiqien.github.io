@@ -10,11 +10,6 @@ const SECTIONS = [
   ['contact', 'Kontak', 'Hubungi, email, kontak']
 ];
 
-function isEditable(element) {
-  return element instanceof HTMLElement
-    && (element.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(element.tagName));
-}
-
 export function init() {
   const dialog = document.querySelector('[data-palette]');
   const input = dialog?.querySelector('[role="combobox"]');
@@ -23,9 +18,10 @@ export function init() {
   const status = dialog?.querySelector('[data-palette-status]');
   const themeButton = document.querySelector('[data-theme-toggle]');
   if (!dialog || !input || !list || !closeButton || !status) return () => {};
-  const terminalEnabled = config.features.terminal
-    && typeof HTMLDialogElement !== 'undefined'
+  const modalSupported = typeof HTMLDialogElement !== 'undefined'
     && typeof HTMLDialogElement.prototype.showModal === 'function';
+  const terminalEnabled = config.features.terminal && modalSupported;
+  const gameEnabled = config.features.game && modalSupported;
 
   const commands = [
     ...SECTIONS.map(([id, label, keywords]) => ({
@@ -82,6 +78,10 @@ export function init() {
     ...(terminalEnabled ? [{
       id: 'open-terminal', label: 'Buka terminal interaktif', keywords: 'terminal easter egg perintah', hint: 'Eksperimen',
       run: () => document.dispatchEvent(new Event('portfolio:open-terminal'))
+    }] : []),
+    ...(gameEnabled ? [{
+      id: 'open-game', label: 'Main Bug Catcher', keywords: 'game permainan bug tangkap mini game', hint: 'Eksperimen',
+      run: () => document.dispatchEvent(new Event('portfolio:open-game'))
     }] : [])
   ];
 
@@ -153,7 +153,7 @@ export function init() {
     const keepOpen = command.id === 'copy-email';
     let closed = null;
     if (!keepOpen) {
-      if (command.id === 'open-terminal') {
+      if (['open-terminal', 'open-game'].includes(command.id)) {
         closed = new Promise((resolve) => dialog.addEventListener('close', resolve, { once: true }));
       }
       close();

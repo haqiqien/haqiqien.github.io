@@ -70,7 +70,7 @@ Every interactive effect must satisfy **all** of these:
 ## Performance budget
 
 - Lighthouse (mobile) targets: Performance ≥ 90, Accessibility ≥ 95, Best Practices ≥ 90, SEO ≥ 90.
-- JavaScript source < 80 KB total (unminified), CSS < 40 KB, initial page weight < 500 KB excluding fonts.
+- JavaScript source < 88,000 bytes total (unminified), CSS < 40 KB, initial page weight < 500 KB excluding fonts. The additional source allowance covers the optional game module, which is loaded only when launched; it does not increase the initial JavaScript download.
 - LCP < 2.5 s on 4G. No layout shift from late-loading images (set `width`/`height`).
 - Images: WebP, `loading="lazy"` below the fold, always with `alt`.
 

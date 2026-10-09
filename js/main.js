@@ -22,6 +22,8 @@ const KONAMI_SEQUENCE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowL
 let konamiIndex = 0;
 let terminalModulePromise;
 let destroyTerminal = null;
+let gameModulePromise;
+let destroyGame = null;
 const terminalSupported = typeof HTMLDialogElement !== 'undefined'
   && typeof HTMLDialogElement.prototype.showModal === 'function';
 const requestTerminal = async () => {
@@ -38,6 +40,23 @@ const requestTerminal = async () => {
   }
 };
 const onTerminalRequest = () => requestTerminal();
+const requestGame = async () => {
+  if (!config.features.game || !terminalSupported) return;
+  try {
+    const game = await (gameModulePromise ||= import('./game.js'));
+    if (!destroyGame) {
+      destroyGame = game.init();
+      window.addEventListener('pagehide', destroyGame, { once: true });
+    }
+    document.dispatchEvent(new Event('portfolio:game-open'));
+  } catch {
+    // Optional game failure must not affect the rest of the page.
+  }
+};
+if (config.features.game && terminalSupported) {
+  document.addEventListener('portfolio:open-game', requestGame);
+  window.addEventListener('pagehide', () => document.removeEventListener('portfolio:open-game', requestGame), { once: true });
+}
 const onKonamiKey = (event) => {
   const target = event.target;
   const isTyping = target instanceof HTMLElement

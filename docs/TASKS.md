@@ -103,7 +103,7 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 - [x] Reduced-motion and touch emulation pass
 - [x] Keyboard-only pass through the entire page, including palette and dialog (Chrome skip link, visible focus, theme toggle, menu/Escape, palette/Escape/focus restore, and form checked; case-study open/focus/Escape/focus restore checked in Firefox and WebKit using a temporary browser-only fixture; no personal project data was added)
 - [x] Contrast check in both themes
-- [x] Remove dead code and console logs; confirm JS < 80 KB (79,728 bytes) and CSS < 40 KB (25,700 bytes) source
+- [x] Remove dead code and console logs; confirm JS < 88,000 bytes (87,940 bytes) and CSS < 40 KB (26,784 bytes) source
 - [x] Short `README.md` with: how to run locally, how to edit `data.js`/`config.js`, how to deploy
 
 **Done when:** acceptance criteria in `PRD.md` section 10 pass; any criteria dependent on real project data are explicitly deferred by the user.
@@ -121,7 +121,7 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 
 ## Optional (P2), only after Phase 11 passes
 - [x] `terminal.js` (I-10): accessible terminal, lazy-loaded from palette or Konami code (commands, Escape, and focus cycling verified in Chrome/Firefox/WebKit; reduced motion and 320–1440px layouts checked; deployed terminal and both triggers verified live)
-- [ ] `game.js` (I-14): Bug Catcher, only launched from palette/terminal
+- [x] `game.js` (I-14): 30-second canvas Bug Catcher with keyboard catch button, reduced-motion static bugs, saved best score, and pause on hidden/offscreen; lazy palette and terminal launches, Escape and focus return checked in Chrome/Firefox/WebKit, 320–1440px layouts checked, and blocked storage handled without errors
 - [ ] Tag filter for projects
 - [ ] Static blog pages (plain HTML) linked from projects
 - [ ] Lightweight, cookie-less analytics

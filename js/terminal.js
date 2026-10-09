@@ -54,7 +54,7 @@ function createDialog() {
   return { dialog, closeButton, input, form, output };
 }
 
-const knownCommands = 'help, whoami, about, projects, skills, hobbies, contact, theme dark|light, clear, exit';
+const knownCommands = 'help, whoami, about, projects, skills, hobbies, contact, theme dark|light, game, clear, exit';
 
 export function init() {
   if (typeof HTMLDialogElement === 'undefined' || typeof HTMLDialogElement.prototype.showModal !== 'function') return () => {};
@@ -130,6 +130,10 @@ export function init() {
         write(`Tema ${argument} aktif.`);
         break;
       }
+      case 'game':
+        close();
+        document.dispatchEvent(new Event('portfolio:open-game'));
+        break;
       case 'clear':
         output.replaceChildren();
         break;
