@@ -659,6 +659,37 @@
   font-weight: 700;
 }
 
+.instagram-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.instagram-profile__avatar {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instagram-profile__identity { min-width: 0; }
+.instagram-profile__identity .eyebrow { margin-bottom: var(--space-1); }
+.instagram-profile__name { margin: 0; font-size: 1rem; }
+.instagram-profile__handle { margin: 0; color: var(--text-muted); }
+.instagram-profile__link { margin-left: auto; white-space: nowrap; }
+
+@media (max-width: 560px) {
+  .instagram-profile { flex-wrap: wrap; }
+  .instagram-profile__link { width: 100%; margin-left: 0; }
+}
+
 .contact-form {
   display: grid;
   max-width: 680px;
