@@ -24,9 +24,9 @@ export const projects = [
 ];
 
 export const skills = [
-  { group: 'Bahasa & Data', items: ['PHP', 'JavaScript', 'Python', 'SQL'] },
-  { group: 'Web', items: ['Laravel', 'RESTful API', 'Web Development'] },
-  { group: 'Implementasi & Analisis', items: ['IT Support', 'Troubleshooting', 'Database Management', 'Data Analysis'] }
+  { group: 'Bahasa & Data', icon: 'code', items: ['PHP', 'JavaScript', 'Python', 'SQL'] },
+  { group: 'Web', icon: 'web', items: ['Laravel', 'RESTful API', 'Web Development'] },
+  { group: 'Implementasi & Analisis', icon: 'analysis', items: ['IT Support', 'Troubleshooting', 'Database Management', 'Data Analysis'] }
 ];
 
 export const hobbies = [

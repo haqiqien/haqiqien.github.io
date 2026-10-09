@@ -94,11 +94,31 @@ function renderProjects(container) {
   container.replaceChildren(...cards);
 }
 
+const skillIconPaths = {
+  code: 'M8 8 4 12l4 4m8-8 4 4-4 4m-5-11-2 14',
+  web: 'M3 4h18v16H3zM3 9h18m-13-3h.01m3 0h.01',
+  analysis: 'M3 12h4l3-8 4 16 3-8h4'
+};
+
+function createSkillIcon(type) {
+  const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  icon.classList.add('skill-group__icon');
+  icon.setAttribute('viewBox', '0 0 24 24');
+  icon.setAttribute('aria-hidden', 'true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  path.setAttribute('d', skillIconPaths[type] || skillIconPaths.code);
+  icon.append(path);
+  return icon;
+}
+
 function renderSkills(container) {
   const groups = skills.map((group) => {
     const section = document.createElement('section');
     section.className = 'skill-group';
-    section.append(createTextElement('h3', 'skill-group__title', group.group));
+    const heading = document.createElement('div');
+    heading.className = 'skill-group__heading';
+    heading.append(createSkillIcon(group.icon), createTextElement('h3', 'skill-group__title', group.group));
+    section.append(heading);
     const items = document.createElement('ul');
     items.className = 'chip-list';
     for (const skill of group.items) {

@@ -557,11 +557,42 @@
 
 .skill-groups {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   gap: var(--space-4);
 }
 
+.skill-group {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+  border-top: 3px solid var(--accent);
+}
+
+.skill-group__heading {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.skill-group__icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  padding: 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--accent-text);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .skill-group__title {
-  margin-bottom: var(--space-4);
+  margin: 0;
 }
 
 .hobby-grid {
