@@ -17,7 +17,7 @@ Site language: `{{id | en}}`  (write all copy below in this language)
 - LinkedIn URL: `{{LINKEDIN_URL}}`
 - Other (Instagram, X, YouTube, …): `{{optional}}`
 - CV PDF (optional): `{{path or URL}}`
-- Site URL (for canonical/OG): `https://haqiqien.github.io/`
+- Site URL (for canonical/OG): `https://haqiqien.github.io/personal-web/`
 
 ## 3. Featured projects (3-4, best first)
 

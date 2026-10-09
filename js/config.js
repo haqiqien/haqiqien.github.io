@@ -6,7 +6,7 @@ export const config = {
   githubUsername: 'haqiqien',
   linkedinUrl: 'https://linkedin.com/in/juyusadinulhaq',
   instagramUrl: 'https://instagram.com/haqiqien',
-  siteUrl: 'https://haqiqien.github.io/',
+  siteUrl: 'https://haqiqien.github.io/personal-web/',
   githubFallback: {
     displayName: 'Data GitHub belum tersedia',
     publicRepos: null,

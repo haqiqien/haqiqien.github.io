@@ -112,10 +112,10 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 
 ## Phase 12: Deploy
 - [x] Add deploy notes for GitHub Pages / Netlify / Vercel in `README.md`
-- [x] Set canonical URL and sitemap to the final domain (`https://haqiqien.github.io/`)
-- [ ] Verify the live site (links, OG preview, console) (the URL currently serves an existing Jekyll site; this workspace has no Git remote, so this source is not published there)
+- [x] Set canonical URL and sitemap to the GitHub Pages project URL (`https://haqiqien.github.io/personal-web/`; sitemap is not listed in the subpath robots file because crawler robots rules are served at the domain root)
+- [ ] Verify the live site (links, OG preview, console) (GitHub Pages is not enabled for this repo yet; run after publishing)
 
-**Waiting on:** the user must connect/authorize publishing this workspace to `haqiqien/haqiqien.github.io` before it can replace the current live site. Real project demo/source links are intentionally deferred; placeholders remain.
+**Waiting on:** enable GitHub Pages for `main`/root after publishing. GitHub reports Pages is currently disabled for this repository. Real project demo/source links are intentionally deferred; placeholders remain.
 
 ---
 
