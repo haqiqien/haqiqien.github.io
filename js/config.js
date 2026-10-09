@@ -11,6 +11,7 @@ export const config = {
     displayName: 'Juyus Muhammad A.',
     login: 'haqiqien',
     html_url: 'https://github.com/haqiqien',
+    avatar_url: 'https://github.com/haqiqien.png',
     public_repos: 13,
     followers: 1,
     repos: [
