@@ -24,14 +24,18 @@ function saveTheme(theme) {
 export function init() {
   const button = document.querySelector('[data-theme-toggle]');
   if (!button) return () => {};
+  const label = button.querySelector('[data-theme-label]');
 
   const systemPreference = matchMedia('(prefers-color-scheme: light)');
   let hasSavedChoice = Boolean(getSavedTheme());
 
   const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme;
-    button.textContent = theme === 'dark' ? 'Mode terang' : 'Mode gelap';
-    button.setAttribute('aria-label', theme === 'dark' ? 'Mode terang — ganti tema' : 'Mode gelap — ganti tema');
+    button.dataset.currentTheme = theme;
+    const nextTheme = theme === 'dark' ? 'terang' : 'gelap';
+    if (label) label.textContent = nextTheme === 'terang' ? 'Terang' : 'Gelap';
+    button.setAttribute('aria-label', `Aktifkan tema ${nextTheme}`);
+    button.title = `Aktifkan tema ${nextTheme}`;
     document.dispatchEvent(new CustomEvent('portfolio:theme-changed', { detail: { theme } }));
   };
 
