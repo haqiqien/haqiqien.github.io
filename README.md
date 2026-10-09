@@ -27,7 +27,7 @@ Situs ini tidak memerlukan build command atau dependensi runtime. Root publikasi
 1. Push proyek ke repository `haqiqien/personal-web`.
 2. Buka **Settings → Pages**.
 3. Pada **Build and deployment**, pilih **Deploy from a branch**, pilih branch `main`, lalu pilih `/(root)` dan simpan.
-4. Tunggu deployment selesai. Project site ini menggunakan URL `https://haqiqien.github.io/personal-web/` dan memuat nama repository sebagai subpath.
+4. Tunggu deployment selesai. Project site ini memakai custom domain akun `addien.ai.id` dengan path repository, sehingga URL-nya `https://addien.ai.id/personal-web/`.
 
 ### Netlify
 
@@ -43,11 +43,11 @@ Situs ini tidak memerlukan build command atau dependensi runtime. Root publikasi
 
 ### Finalisasi URL publik
 
-URL target project site dikonfigurasi sebagai `https://haqiqien.github.io/personal-web/`. Jika URL atau nama repository berubah, perbarui `siteUrl` di `js/config.js`, canonical, `og:url`, `og:image`, dan `twitter:image` di `index.html`, serta elemen `<loc>` di `sitemap.xml`.
+URL target project site dikonfigurasi sebagai `https://addien.ai.id/personal-web/`. Jika URL atau nama repository berubah, perbarui `siteUrl` di `js/config.js`, canonical, `og:url`, `og:image`, dan `twitter:image` di `index.html`, serta elemen `<loc>` di `sitemap.xml`.
 
 `siteUrl` di `js/config.js` tidak mengubah metadata HTML statis. Canonical, Open Graph, Twitter, dan sitemap sudah memakai URL project site di atas. Pastikan URL publik untuk `assets/images/og-card.png` dapat dibuka, lalu cek halaman utama, metadata preview, tautan, dan console setelah deploy.
 
-GitHub Pages project site berada di subpath `/personal-web/`, sedangkan crawler hanya membaca `robots.txt` dari root domain (`/robots.txt`). Karena repository root domain adalah repository lain, `robots.txt` proyek ini tidak memuat directive sitemap dan tidak mengubah robots file situs root. Submit `https://haqiqien.github.io/personal-web/sitemap.xml` langsung ke Search Console bila diperlukan.
+GitHub Pages project site berada di subpath `/personal-web/`, sedangkan crawler hanya membaca `robots.txt` dari root domain (`/robots.txt`). Karena repository root domain adalah repository lain, `robots.txt` proyek ini tidak memuat directive sitemap dan tidak mengubah robots file situs root. Submit `https://addien.ai.id/personal-web/sitemap.xml` langsung ke Search Console bila diperlukan.
 
 Proyek yang belum memiliki data nyata akan tetap menampilkan placeholder. Dalam kondisi itu, kriteria PRD untuk tautan demo dan repositori belum terpenuhi dan harus dianggap tertunda, bukan diganti dengan tautan contoh.
 

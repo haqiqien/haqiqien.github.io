@@ -112,10 +112,10 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 
 ## Phase 12: Deploy
 - [x] Add deploy notes for GitHub Pages / Netlify / Vercel in `README.md`
-- [x] Set canonical URL and sitemap to the GitHub Pages project URL (`https://haqiqien.github.io/personal-web/`; sitemap is not listed in the subpath robots file because crawler robots rules are served at the domain root)
-- [ ] Verify the live site (links, OG preview, console) (GitHub Pages is not enabled for this repo yet; run after publishing)
+- [x] Set canonical URL and sitemap to the GitHub Pages project URL (`https://addien.ai.id/personal-web/`; sitemap is not listed in the subpath robots file because crawler robots rules are served at the domain root)
+- [ ] Verify the live site (links, OG preview, console) (GitHub Pages is enabled for `main`/root; initial build is in progress)
 
-**Waiting on:** enable GitHub Pages for `main`/root after publishing. GitHub reports Pages is currently disabled for this repository. Real project demo/source links are intentionally deferred; placeholders remain.
+**Deployment status:** source is published and GitHub Pages is enabled for `main`/root; verify the site after the first build completes. Real project demo/source links are intentionally deferred; placeholders remain.
 
 ---
 
