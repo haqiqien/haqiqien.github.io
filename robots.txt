@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haqiqien.github.io/sitemap.xml

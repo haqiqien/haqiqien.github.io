@@ -1,0 +1,247 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portofolio Juyus Muhammad Adinulhaq, IT Implementor & Support dan Software Developer (Laravel).">
+  <meta name="theme-color" content="#0B1020">
+  <title>Juyus Muhammad Adinulhaq — Portofolio</title>
+  <link rel="canonical" href="https://haqiqien.github.io/">
+  <script>
+    (() => {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = new URL('./', window.location.href).href;
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Portofolio Juyus Muhammad Adinulhaq">
+  <meta property="og:title" content="Juyus Muhammad Adinulhaq — Portofolio">
+  <meta property="og:description" content="Portofolio Juyus Muhammad Adinulhaq, IT Implementor &amp; Support dan Software Developer (Laravel).">
+  <meta property="og:url" content="https://haqiqien.github.io/">
+  <meta property="og:image" content="https://haqiqien.github.io/assets/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portofolio Juyus Muhammad Adinulhaq — IT Implementor &amp; Support dan Software Developer (Laravel).">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juyus Muhammad Adinulhaq — Portofolio">
+  <meta name="twitter:description" content="Portofolio Juyus Muhammad Adinulhaq, IT Implementor &amp; Support dan Software Developer (Laravel).">
+  <meta name="twitter:image" content="https://haqiqien.github.io/assets/images/og-card.png">
+  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    (() => {
+      let theme = 'dark';
+      try {
+        const saved = localStorage.getItem('portfolio-theme');
+        theme = saved === 'light' || saved === 'dark'
+          ? saved
+          : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      } catch {
+        theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="nav__brand" href="#hero" aria-label="JMA — Beranda">JMA</a>
+      <div class="nav__controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Mode terang — ganti tema">Mode terang</button>
+        <button class="nav__palette" type="button" data-palette-trigger aria-keyshortcuts="Control+K Meta+K">⌘K <span class="visually-hidden">Buka palet perintah</span></button>
+        <button class="nav__toggle" type="button" data-nav-toggle aria-label="Buka menu navigasi" aria-controls="primary-navigation" aria-expanded="false">
+          <span aria-hidden="true">Menu</span>
+        </button>
+      </div>
+      <ul class="nav__list" id="primary-navigation">
+        <li><a class="nav__link" href="#projects" data-nav-link>Proyek</a></li>
+        <li><a class="nav__link" href="#github" data-nav-link>GitHub</a></li>
+        <li><a class="nav__link" href="#skills" data-nav-link>Keahlian</a></li>
+        <li><a class="nav__link" href="#about" data-nav-link>Tentang</a></li>
+        <li><a class="nav__link" href="#hobbies" data-nav-link>Hobi</a></li>
+        <li><a class="nav__link" href="#contact" data-nav-link>Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"><span></span></div>
+  <main id="main-content">
+    <section class="section section--hero" id="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" data-hero-canvas aria-hidden="true"></canvas>
+      <div class="container">
+        <p class="eyebrow">Portofolio pribadi</p>
+        <h1 id="hero-title">Juyus Muhammad Adinulhaq</h1>
+        <p class="hero__role"><span class="visually-hidden">IT Implementor &amp; Support, Software Developer (Laravel), dan mahasiswa Magister Ilmu Komputer.</span><span aria-hidden="true">IT Implementor &amp; Support <span>·</span> <span data-role-word>Software Developer (Laravel)</span></span></p>
+        <p class="hero__summary">Saya membantu pengguna mengatasi kendala teknis dan mengembangkan aplikasi web dengan Laravel.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects" data-magnetic data-cursor="View">Lihat proyek</a>
+          <a class="button button--secondary" href="#contact" data-magnetic data-cursor="View">Hubungi saya</a>
+        </div>
+        <nav class="hero__socials" aria-label="Tautan sosial">
+          <span class="hero__social-placeholder">GitHub — username belum tersedia</span>
+          <a href="https://linkedin.com/in/juyusadinulhaq" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:juyushaqiqi@gmail.com">Email</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="eyebrow">Pilihan karya</p>
+        <h2 id="projects-title">Proyek Pilihan</h2>
+        <div class="project-grid" data-projects>
+          <p>Detail proyek akan ditambahkan.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="github" aria-labelledby="github-title">
+      <div class="container">
+        <p class="eyebrow">Kode terbuka</p>
+        <h2 id="github-title">Aktivitas GitHub</h2>
+        <p class="github__notice" data-github-notice role="status">Username GitHub belum diisi. Tambahkan username pada <code>js/config.js</code> untuk menampilkan data langsung.</p>
+        <div class="github__layout">
+          <div class="github__profile" data-github-profile aria-label="Ringkasan profil GitHub">
+            <p>Data profil belum tersedia.</p>
+          </div>
+          <div class="github__repos" data-github-repos aria-label="Repositori GitHub">
+            <p>Daftar repositori akan tampil setelah username tersedia.</p>
+          </div>
+        </div>
+        <div class="github__languages" data-github-languages></div>
+      </div>
+    </section>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="eyebrow">Yang saya gunakan</p>
+        <h2 id="skills-title">Keahlian</h2>
+        <div class="skill-groups" data-skills>
+          <p>Keahlian akan ditampilkan di sini.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <p class="eyebrow">Latar belakang</p>
+        <h2 id="about-title">Tentang Saya</h2>
+        <div class="about__grid">
+          <div class="about__copy">
+            <p>Saya lulusan Informatika Universitas Muhammadiyah Semarang dengan IPK 3,93/4,00 dan predikat Lulusan Terbaik Fakultas Teknik dan Ilmu Komputer. Saya memiliki dasar pengembangan perangkat lunak, basis data, dan analisis masalah teknis.</p>
+            <p>Saat ini saya menempuh Magister Ilmu Komputer di Universitas Gadjah Mada. Fokus riset saya mencakup NLP, teknologi bahasa Indonesia, model bahasa berbasis transformer, dan analisis teks media sosial.</p>
+            <p>Saya juga terbiasa membantu pengguna non-teknis memahami perangkat lunak dan menangani troubleshooting komputer maupun ponsel.</p>
+          </div>
+          <ul class="about__facts" aria-label="Fokus saat ini">
+            <li class="about__fact"><strong>Sedang menempuh</strong><span>Magister Ilmu Komputer, Universitas Gadjah Mada</span></li>
+            <li class="about__fact"><strong>Fokus riset</strong><span>NLP dan teknologi bahasa Indonesia</span></li>
+            <li class="about__fact"><strong>Sertifikasi</strong><span>Belajar Laravel · Code Generation and Optimization Using IBM Granite</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="hobbies" aria-labelledby="hobbies-title">
+      <div class="container">
+        <p class="eyebrow">Di luar pekerjaan</p>
+        <h2 id="hobbies-title">Hobi</h2>
+        <div class="hobby-grid" data-hobbies>
+          <article class="hobby-card">
+            <span class="hobby-card__icon" aria-hidden="true">📷</span>
+            <h3 class="hobby-card__title">Fotografi</h3>
+            <p class="hobby-card__story">Saya rutin memotret dan mengelola hasil foto menggunakan ponsel.</p>
+            <a class="hobby-card__link" href="https://instagram.com/haqiqien" rel="noopener noreferrer">Lihat foto di Instagram</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Mari terhubung</p>
+        <h2 id="contact-title">Hubungi Saya</h2>
+        <p class="contact__intro">Untuk percakapan tentang implementasi IT, dukungan pengguna, atau pengembangan web, silakan hubungi saya melalui email atau LinkedIn.</p>
+        <div class="contact__links">
+          <a class="button button--primary" href="mailto:juyushaqiqi@gmail.com" data-magnetic data-cursor="View">juyushaqiqi@gmail.com</a>
+          <a class="button button--secondary" href="https://linkedin.com/in/juyusadinulhaq" rel="noopener noreferrer" data-magnetic data-cursor="View">LinkedIn</a>
+          <a class="button button--secondary" href="https://instagram.com/haqiqien" rel="noopener noreferrer" data-magnetic data-cursor="View">Instagram</a>
+        </div>
+        <form class="contact-form" data-contact-form action="mailto:juyushaqiqi@gmail.com" method="post" enctype="text/plain">
+          <p class="contact-form__note">Pesan akan disiapkan di aplikasi email Anda. Jika form tidak berfungsi, gunakan tautan email di atas.</p>
+          <div class="contact-form__field">
+            <label for="contact-name">Nama</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="contact-name-error">
+            <span class="contact-form__error" id="contact-name-error" data-field-error hidden></span>
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="contact-email-error">
+            <span class="contact-form__error" id="contact-email-error" data-field-error hidden></span>
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-message">Pesan</label>
+            <textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="5000" required aria-describedby="contact-message-error"></textarea>
+            <span class="contact-form__error" id="contact-message-error" data-field-error hidden></span>
+          </div>
+          <button class="button button--primary" type="submit">Siapkan email</button>
+          <p class="contact-form__status" data-contact-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="case-dialog" data-case-dialog aria-labelledby="case-dialog-title" aria-describedby="case-dialog-description">
+    <div class="case-dialog__panel">
+      <button class="button button--small button--secondary case-dialog__close" type="button" data-dialog-close autofocus aria-label="Tutup studi kasus">Tutup</button>
+      <p class="eyebrow">Studi kasus</p>
+      <h2 id="case-dialog-title" data-case-dialog-title></h2>
+      <p id="case-dialog-description" class="case-dialog__description">Ringkasan tantangan, solusi, keputusan, dan hasil proyek.</p>
+      <div class="case-dialog__content" data-case-dialog-content></div>
+    </div>
+  </dialog>
+
+  <dialog class="palette" data-palette aria-labelledby="palette-title" aria-describedby="palette-description">
+    <div class="palette__panel">
+      <div class="palette__header">
+        <div>
+          <h2 class="palette__title" id="palette-title">Palet perintah</h2>
+          <p class="palette__description" id="palette-description">Cari bagian atau tindakan.</p>
+        </div>
+        <button class="button button--small button--secondary palette__close" type="button" data-palette-close aria-label="Tutup palet perintah">Tutup</button>
+      </div>
+      <label class="visually-hidden" for="palette-query">Cari perintah</label>
+      <input class="palette__input" id="palette-query" type="search" role="combobox" aria-autocomplete="list" aria-controls="palette-options" aria-expanded="false" placeholder="Ketik nama bagian atau tindakan…" autocomplete="off">
+      <ul class="palette__options" id="palette-options" role="listbox" aria-label="Perintah"></ul>
+      <p class="palette__status" data-palette-status role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <noscript>
+    <div class="noscript-note container">
+      <p>JavaScript tidak aktif. Proyek: <a href="#projects">detail belum tersedia</a>. <a href="#github">GitHub</a>: username belum tersedia. Tautan lain: <a href="https://linkedin.com/in/juyusadinulhaq" rel="noopener noreferrer">LinkedIn</a> · <a href="mailto:juyushaqiqi@gmail.com">Email</a>.</p>
+    </div>
+  </noscript>
+
+  <div class="cursor" data-custom-cursor aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"><span class="cursor__label"></span></span>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>Juyus Muhammad Adinulhaq</p>
+      <div class="site-footer__actions">
+        <p>Portofolio pribadi</p>
+        <a class="back-to-top" href="#hero">Kembali ke atas <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
