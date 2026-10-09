@@ -47,7 +47,7 @@ URL target project site dikonfigurasi sebagai `https://addien.ai.id/personal-web
 
 `siteUrl` di `js/config.js` tidak mengubah metadata HTML statis. Canonical, Open Graph, Twitter, dan sitemap sudah memakai URL project site di atas. Pastikan URL publik untuk `assets/images/og-card.png` dapat dibuka, lalu cek halaman utama, metadata preview, tautan, dan console setelah deploy.
 
-GitHub Pages project site berada di subpath `/personal-web/`, sedangkan crawler hanya membaca `robots.txt` dari root domain (`/robots.txt`). Karena repository root domain adalah repository lain, `robots.txt` proyek ini tidak memuat directive sitemap dan tidak mengubah robots file situs root. Submit `https://addien.ai.id/personal-web/sitemap.xml` langsung ke Search Console bila diperlukan.
+GitHub Pages project site berada di subpath `/personal-web/`, sedangkan crawler hanya membaca `robots.txt` dari root domain (`/robots.txt`) menurut [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html). Karena repository root domain adalah repository lain, `robots.txt` proyek ini tidak memuat directive sitemap dan tidak mengubah robots file situs root. Submit `https://addien.ai.id/personal-web/sitemap.xml` langsung ke Search Console bila diperlukan.
 
 Proyek yang belum memiliki data nyata akan tetap menampilkan placeholder. Dalam kondisi itu, kriteria PRD untuk tautan demo dan repositori belum terpenuhi dan harus dianggap tertunda, bukan diganti dengan tautan contoh.
 

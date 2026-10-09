@@ -106,16 +106,16 @@ Legend: **P0** MVP Â· **P1** v1.1/v1.2 Â· **P2** optional.
 - [x] Remove dead code and console logs; confirm JS < 80 KB and CSS < 40 KB source
 - [x] Short `README.md` with: how to run locally, how to edit `data.js`/`config.js`, how to deploy
 
-**Done when:** acceptance criteria in `PRD.md` section 10 all pass.
+**Done when:** acceptance criteria in `PRD.md` section 10 pass; any criteria dependent on real project data are explicitly deferred by the user.
 
-**Acceptance status:** all local QA items are complete. PRD criterion 6 (public Open Graph preview) awaits publishing this source to the configured site. Criterion 7 (real demo/source links) is intentionally deferred; the user confirmed project placeholders should remain.
+**Acceptance status:** local and live QA for PRD criteria 1–6 is complete, including Open Graph tags and image availability. Criterion 7 (real demo/source links) is intentionally deferred; the user confirmed project placeholders should remain.
 
 ## Phase 12: Deploy
 - [x] Add deploy notes for GitHub Pages / Netlify / Vercel in `README.md`
 - [x] Set canonical URL and sitemap to the GitHub Pages project URL (`https://addien.ai.id/personal-web/`; sitemap is not listed in the subpath robots file because crawler robots rules are served at the domain root)
-- [ ] Verify the live site (links, OG preview, console) (GitHub Pages is enabled for `main`/root; initial build is in progress)
+- [x] Verify the live site (links, OG tags/image, console) at `https://addien.ai.id/personal-web/` (HTTP 200; sitemap and OG image return 200; no browser console errors or failed requests; all internal anchor targets exist)
 
-**Deployment status:** source is published and GitHub Pages is enabled for `main`/root; verify the site after the first build completes. Real project demo/source links are intentionally deferred; placeholders remain.
+**Deployment status:** source is published on `main` and GitHub Pages is enabled for root. Live site verification passed. Real project demo/source links remain placeholders by user request, so PRD criterion 7 is deferred.
 
 ---
 
