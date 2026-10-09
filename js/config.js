@@ -8,10 +8,34 @@ export const config = {
   instagramUrl: 'https://instagram.com/haqiqien',
   siteUrl: 'https://addien.ai.id/personal-web/',
   githubFallback: {
-    displayName: 'Data GitHub belum tersedia',
-    publicRepos: null,
-    followers: null,
-    repos: []
+    displayName: 'Juyus Muhammad A.',
+    login: 'haqiqien',
+    html_url: 'https://github.com/haqiqien',
+    public_repos: 13,
+    followers: 1,
+    repos: [
+      {
+        name: 'LoRA',
+        description: 'Eksperimen fine-tuning SmolLM2-135M dengan LoRA.',
+        language: 'Jupyter Notebook',
+        stargazers_count: 0,
+        html_url: 'https://github.com/haqiqien/LoRA'
+      },
+      {
+        name: 'roti-bakar',
+        description: 'Website profil Roti Bakar Surya Panggang.',
+        language: 'TypeScript',
+        stargazers_count: 0,
+        html_url: 'https://github.com/haqiqien/roti-bakar'
+      },
+      {
+        name: 'tempatin-a1',
+        description: 'Platform rekomendasi tempat produktif untuk mahasiswa dan pekerja remote Indonesia.',
+        language: 'Blade',
+        stargazers_count: 0,
+        html_url: 'https://github.com/haqiqien/tempatin-a1'
+      }
+    ]
   },
   features: {
     cursor: true,

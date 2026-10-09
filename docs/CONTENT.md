@@ -67,9 +67,10 @@ Guidance: pick real work, not tutorial clones. Each project should have a live d
 - Form handling: `mailto` | `{{form service URL}}`
 
 ## 8. GitHub fallback data (used if the API fails)
-- Display name: `{{}}`
-- Public repos / followers (approximate): `{{}}` / `{{}}`
-- Up to 4 repos: name, description, language, stars, URL: `{{}}`
+- Display name: `Juyus Muhammad A.` (`haqiqien`)
+- Public repos / followers (snapshot): `13` / `1`
+- Repositories: `LoRA` (Jupyter Notebook, 0 stars), `roti-bakar` (TypeScript, 0 stars), `tempatin-a1` (Blade, 0 stars)
+- Profile: https://github.com/haqiqien
 
 ## 9. Tone
 Friendly, direct, first person, short sentences. Avoid buzzwords ("passionate", "guru", "rockstar"). Be specific about what you built, why, and what you learned.
