@@ -167,7 +167,7 @@ main {
 }
 
 .hero__identity {
-  --hero-name-size: clamp(2.4rem, 6vw + 1rem, 5rem);
+  --hero-name-size: clamp(1.25rem, 9.375vw - .625rem, 5rem);
   display: flex;
   min-width: 0;
   align-items: center;
@@ -176,8 +176,9 @@ main {
 }
 
 .hero__portrait {
-  width: var(--hero-name-size);
-  height: var(--hero-name-size);
+  width: calc(var(--hero-name-size) * 2.16);
+  height: calc(var(--hero-name-size) * 2.16);
+  aspect-ratio: 1;
   flex: 0 0 auto;
   margin: 0;
 }
@@ -370,6 +371,10 @@ main {
 }
 
 @media (min-width: 768px) {
+  .hero__identity {
+    --hero-name-size: clamp(2.4rem, 6vw + 1rem, 5rem);
+  }
+
   .about__grid {
     grid-template-columns: minmax(0, 1.5fr) minmax(250px, .8fr);
     align-items: start;
