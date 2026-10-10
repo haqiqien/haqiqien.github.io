@@ -166,30 +166,32 @@ main {
   width: min(calc(100% - 2 * var(--space-6)), var(--content-width));
 }
 
-.hero__layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
+.hero__identity {
+  display: flex;
+  min-width: 0;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 .hero__portrait {
-  width: min(100%, 12rem);
-  margin: 0 auto;
+  width: clamp(3.5rem, 8vw, 6.5rem);
+  flex: 0 0 auto;
+  margin: 0;
 }
 
 .hero__portrait img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: 50%;
   box-shadow: var(--shadow-soft);
   object-fit: cover;
-  object-position: center 25%;
 }
 
 .hero__content { min-width: 0; }
+.hero__identity h1 { min-width: 0; margin: 0; }
 
 .eyebrow {
   margin-bottom: var(--space-4);
@@ -244,16 +246,6 @@ main {
 .hero__social-placeholder {
   color: var(--text-muted);
   font-size: .9rem;
-}
-
-@media (min-width: 768px) {
-  .hero__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(14rem, .58fr);
-    gap: var(--space-12);
-  }
-
-  .hero__content { grid-column: 1; grid-row: 1; }
-  .hero__portrait { grid-column: 2; grid-row: 1; width: min(100%, 22rem); margin: 0 0 0 auto; }
 }
 
 .about__grid {
