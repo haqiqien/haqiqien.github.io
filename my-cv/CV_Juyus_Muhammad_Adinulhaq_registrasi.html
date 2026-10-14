@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV Juyus Muhammad Adinulhaq - Volunteer Registrasi</title>
+<style>
+  :root { --ink:#111; --muted:#444; --rule:#111; }
+  * { box-sizing: border-box; }
+  html { background:#e9e9e9; scroll-behavior:smooth; scroll-padding-top:72px; }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.4;
+    color: var(--ink);
+    background:#fff;
+  }
+  main {
+    max-width: 210mm;
+    margin: 20px auto 32px;
+    padding: 16mm 16mm 14mm;
+    background:#fff;
+    box-shadow: 0 1px 6px rgba(0,0,0,.18);
+  }
+  .cv-nav {
+    position:sticky; top:0; z-index:2;
+    max-width:210mm; margin:0 auto; padding:10px 16px;
+    display:flex; align-items:center; gap:16px;
+    color:#f8fafc; background:#172033;
+    box-shadow:0 2px 8px rgba(0,0,0,.18);
+  }
+  .cv-nav a { color:inherit; text-decoration:none; }
+  .cv-nav__home { flex:none; font-weight:700; }
+  .cv-nav__links { display:flex; gap:14px; overflow-x:auto; white-space:nowrap; }
+  .cv-nav a:hover { text-decoration:underline; text-underline-offset:3px; }
+  .cv-nav a:focus-visible { outline:2px solid #fbbf24; outline-offset:3px; }
+  header { text-align:center; margin-bottom: 4px; }
+  h1 { font-size: 16pt; margin: 0 0 2px; letter-spacing: .02em; }
+  .title { font-size: 11.5pt; margin: 0 0 2px; }
+  .contact { margin: 0; font-size: 10pt; color: var(--muted); }
+  .contact a { color: inherit; text-decoration: none; }
+  section { margin-top: 18px; scroll-margin-top:72px; }
+  h2 {
+    font-size: 11.5pt;
+    margin: 0 0 5px;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid var(--rule);
+    text-transform: uppercase;
+  }
+  p { margin: 0 0 4px; }
+  ul { margin: 2px 0 4px; padding-left: 18px; }
+  li { margin-bottom: 2px; }
+  .row { display:flex; justify-content:space-between; gap: 12px; margin-top: 5px; }
+  .row strong { font-weight: 700; }
+  .row span { white-space: nowrap; }
+  @media (max-width: 600px) {
+    .cv-nav { gap:12px; padding:10px 16px; }
+    .cv-nav__links { gap:12px; }
+    main { margin: 16px 12px 24px; padding: 24px 20px; box-shadow:0 1px 6px rgba(0,0,0,.12); }
+    .row { flex-direction: column; gap: 0; }
+    .row span { white-space: normal; color: var(--muted); }
+  }
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    html { background:#fff; }
+    .cv-nav { display:none; }
+    main { margin:0; padding:0; box-shadow:none; max-width:none; }
+  }
+</style>
+</head>
+<body>
+<nav class="cv-nav" aria-label="Navigasi CV">
+  <a class="cv-nav__home" href="../index.html">← Beranda</a>
+  <div class="cv-nav__links">
+    <a href="#ringkasan">Ringkasan</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#sertifikasi">Sertifikasi</a>
+    <a href="#prestasi">Prestasi</a>
+  </div>
+</nav>
+<main>
+  <header>
+    <h1>JUYUS MUHAMMAD ADINULHAQ</h1>
+    <p class="title">IT Implementor &amp; Support | Software Developer (Laravel)</p>
+    <p class="contact">Yogyakarta, Indonesia | +62 8954 1443 5962 | <a href="mailto:juyushaqiqi@gmail.com">juyushaqiqi@gmail.com</a></p>
+    <p class="contact"><a href="https://linkedin.com/in/juyusadinulhaq">linkedin.com/in/juyusadinulhaq</a></p>
+  </header>
+
+  <section id="ringkasan" aria-labelledby="ringkasan-title">
+    <h2 id="ringkasan-title">Ringkasan Profesional</h2>
+    <p>Mahasiswa S2 Ilmu Komputer Universitas Gadjah Mada dan lulusan terbaik S1 Informatika (IPK 3,93/4,00) yang siap bertugas sebagai volunteer registrasi. Teliti, ramah, komunikatif, cepat belajar, mampu mengikuti arahan tim, serta terbiasa membantu orang lain menyelesaikan masalah teknis dan memakai software. Bersedia hadir pada briefing dan technical meeting sesuai jadwal panitia.</p>
+  </section>
+
+  <section id="keahlian" aria-labelledby="keahlian-title">
+    <h2 id="keahlian-title">Keahlian</h2>
+    <ul>
+      <li>Pelayanan: menyambut dan membantu orang lain dengan ramah dan sabar</li>
+      <li>Ketelitian: memeriksa detail dan menganalisis masalah secara runtut</li>
+      <li>Kerja tim dan komunikasi: menjelaskan hal teknis secara sederhana, sabar, dan siap berkoordinasi</li>
+      <li>Teknis: troubleshooting perangkat (komputer dan ponsel), instalasi dan penggunaan software, dasar pemrograman web</li>
+    </ul>
+  </section>
+
+  <section id="pengalaman" aria-labelledby="pengalaman-title">
+    <h2 id="pengalaman-title">Pengalaman</h2>
+    <div class="row"><strong>IT Support &amp; Mentoring Informal</strong><span>Berjalan</span></div>
+    <ul>
+      <li>Menangani troubleshooting perangkat secara langsung, mulai dari ponsel hingga komputer, mencakup masalah software dan hardware</li>
+      <li>Memandu pengguna non-teknis memakai berbagai software, dengan menjelaskan langkah secara sederhana dan sabar</li>
+      <li>Menganalisis gejala masalah, mencari penyebab, dan menyelesaikannya secara mandiri</li>
+    </ul>
+  </section>
+
+  <section id="pendidikan" aria-labelledby="pendidikan-title">
+    <h2 id="pendidikan-title">Pendidikan</h2>
+    <div class="row"><strong>Universitas Gadjah Mada</strong><span>Februari 2026 - Sekarang</span></div>
+    <p>Magister Ilmu Komputer (Master of Computer Science). Fokus riset: NLP, teknologi bahasa Indonesia, model bahasa berbasis transformer, analisis teks media sosial.</p>
+    <div class="row"><strong>Universitas Muhammadiyah Semarang</strong><span>September 2020 - Agustus 2024</span></div>
+    <p>Sarjana Informatika, IPK 3,93/4,00. Lulusan Terbaik Fakultas Teknik dan Ilmu Komputer pada Wisuda ke-44 (2024).</p>
+  </section>
+
+  <section id="sertifikasi" aria-labelledby="sertifikasi-title">
+    <h2 id="sertifikasi-title">Sertifikasi</h2>
+    <ul>
+      <li>Sertifikat Belajar Laravel</li>
+      <li>Code Generation and Optimization Using IBM Granite</li>
+    </ul>
+  </section>
+
+  <section id="prestasi" aria-labelledby="prestasi-title">
+    <h2 id="prestasi-title">Prestasi</h2>
+    <ul>
+      <li>Medali Perak, Game Programming Competition, Asosiasi Prodi Informatika (APSI) PTMA</li>
+      <li>Peserta divisi Data Mining, GemasTIK XV (Pagelaran Mahasiswa Nasional Bidang TIK) 2022</li>
+      <li>Juara 2 Bidang Kimia, ON-MIPA, Universitas Muhammadiyah Semarang</li>
+      <li>Lulusan Terbaik Fakultas Teknik dan Ilmu Komputer, Universitas Muhammadiyah Semarang (2024)</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
