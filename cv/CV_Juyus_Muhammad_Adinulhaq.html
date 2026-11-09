@@ -45,9 +45,11 @@
     background:var(--page-bg);
   }
   main {
-    max-width: 210mm;
+    width: 210mm;
+    max-width: 100%;
+    min-height: 297mm;
     margin: 20px auto 32px;
-    padding: 16mm 16mm 14mm;
+    padding: 14mm 16mm;
     background:var(--paper);
     box-shadow: 0 1px 6px rgba(0,0,0,.18);
   }
@@ -100,18 +102,22 @@
   .row strong { font-weight: 700; }
   .row span { white-space: nowrap; }
   .subline { margin:0 0 3px; color:var(--muted); }
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm;
+  }
   @media (max-width: 600px) {
     .cv-nav { gap:12px; padding:10px 16px; }
     .cv-nav__links { gap:12px; }
-    main { margin: 16px 12px 24px; padding: 24px 20px; box-shadow:0 1px 6px rgba(0,0,0,.12); }
+    main { width: auto; min-height: auto; margin: 16px 12px 24px; padding: 24px 20px; box-shadow:0 1px 6px rgba(0,0,0,.12); }
     .row { flex-direction: column; gap: 0; }
     .row span { white-space: normal; color: var(--muted); }
   }
   @media print {
-    @page { size: A4; margin: 12mm; }
-    html, body, main { background:#fff; color:#111; }
+    html, body { width: 210mm; background:#fff; color:#111; }
     .cv-nav { display:none; }
-    main { margin:0; padding:0; box-shadow:none; max-width:none; }
+    main { width: 100%; min-height: 0; margin:0; padding:0; box-shadow:none; max-width:none; background:#fff; color:#111; }
+    section { margin-top: 13px; break-inside: avoid; }
     a { color:#111 !important; text-decoration:none; }
   }
 </style>
