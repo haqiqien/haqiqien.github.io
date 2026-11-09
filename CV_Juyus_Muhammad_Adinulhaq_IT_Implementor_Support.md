@@ -1,52 +1,64 @@
 # JUYUS MUHAMMAD ADINULHAQ
 
-**IT Implementor & Support | Software Developer (Laravel)**
+**IT Support**
 
-Yogyakarta, Indonesia | +62 8954 1443 5962 | juyushaqiqi@gmail.com
-[linkedin.com/in/juyusadinulhaq](https://linkedin.com/in/juyusadinulhaq)
+Yogyakarta | WhatsApp: +62 8954 1443 5962 | Email: juyushaqiqi@gmail.com  
+LinkedIn: [linkedin.com/in/juyusadinulhaq](https://linkedin.com/in/juyusadinulhaq)
 
 ---
 
-## RINGKASAN PROFESIONAL
+## RINGKASAN
 
-Lulusan terbaik S1 Informatika (IPK 3,93/4,00) dan mahasiswa S2 Ilmu Komputer Universitas Gadjah Mada dengan latar belakang software development, database, dan analisis masalah teknis. Memiliki dasar pengembangan web yang kuat dengan Laravel, PHP, JavaScript, dan SQL melalui pendidikan formal dan sertifikasi. Terbiasa melakukan troubleshooting perangkat (komputer dan ponsel, software maupun hardware) dan membimbing orang lain memakai software. Tertarik pada implementasi sistem dan dukungan pengguna untuk software fotoo.id, serta memiliki hobi fotografi (saat ini dengan ponsel) dan antusias mendalami fotografi dengan kamera DSLR.
+Lulusan S1 Informatika Universitas Muhammadiyah Semarang (IPK 3,93/4,00) dan mahasiswa S2 Ilmu Komputer Universitas Gadjah Mada di Yogyakarta. Memiliki dasar pemrograman web, pengelolaan database, serta pengalaman troubleshooting perangkat komputer dan software. Terbiasa melakukan instalasi aplikasi, membantu pengguna non-teknis memakai perangkat lunak, serta mencatat administrasi dan dokumentasi kegiatan di organisasi.
 
 ---
 
 ## KEAHLIAN
 
-- **Implementasi & Support:** troubleshooting software dan hardware (komputer, laptop, ponsel), instalasi dan konfigurasi software, pelatihan pengguna, komunikasi dengan pengguna non-teknis
-- **Pemrograman & Web:** PHP, Laravel, JavaScript, Python, RESTful API, Web Development
-- **Database:** SQL, Database Management, Data Warehousing, Data Analysis
-- **Lainnya:** IT Audit, Machine Learning, Natural Language Processing (NLP), Software Development
+- **IT Support:** troubleshooting hardware dan software (komputer, laptop, ponsel), instalasi dan konfigurasi software, pendampingan pengguna non-teknis
+- **Pemrograman:** PHP, Laravel, JavaScript, Python, Web Development
+- **Administrasi & Kerja Tim:** pengelolaan dokumen, surat-menyurat, dokumentasi kegiatan, komunikasi dan koordinasi tim
 
 ---
 
-## PENGALAMAN KERJA
+## PENGALAMAN MAGANG
 
-### IT Support & Mentoring Informal (Keluarga dan Lingkungan Sekitar) — *Berjalan*
+**Web Developer (Magang), CV Fatih Corporindo** (Februari 2023 - Maret 2023)
 
-- Menangani troubleshooting perangkat secara langsung, mulai dari ponsel hingga komputer, mencakup masalah software dan hardware
-- Memandu pengguna non-teknis memakai berbagai software, dengan menjelaskan langkah secara sederhana dan sabar
-- Menganalisis gejala masalah, mencari penyebab, dan menyelesaikannya secara mandiri
+- Membuat website company profile perusahaan menggunakan Laravel
+- Menyiapkan database serta menguji fitur-fitur pada website
+
+---
+
+## PENGALAMAN ORGANISASI
+
+**Anggota Tim Media dan Dokumentasi (Publikasi, Desain, dan Dokumentasi/PDD), Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa 2023)** (Juni 2023 - November 2023)  
+Direktorat Jenderal Pendidikan Tinggi, Riset, dan Teknologi Kemdikbudristek
+
+- Mengelola peliputan media, merancang konten visual, dan mendokumentasikan kegiatan program untuk mendukung pengembangan organisasi dan keterlibatan masyarakat
+
+**Sekretaris II, Ikatan Mahasiswa Muhammadiyah (IMM), Universitas Muhammadiyah Semarang** (Februari 2022 - Februari 2023)
+
+- Mengoordinasikan komunikasi dan penyampaian informasi antaranggota maupun pengurus
+- Menyiapkan, mengelola, dan mendistribusikan surat-menyurat organisasi
+- Mengoordinasikan tugas administrasi dan mendukung kegiatan organisasi
+- Menyusun notulen rapat serta membantu mengatur jadwal kegiatan
+
+**Anggota Divisi Riset dan Teknologi, Himpunan Mahasiswa Informatika (HIMAFOR), Universitas Muhammadiyah Semarang** (Januari 2021 - Januari 2022)
+
+- Berkontribusi pada kegiatan terkait teknologi dan dokumentasi
+- Membantu troubleshooting IT dan pengelolaan perangkat selama acara
 
 ---
 
 ## PENDIDIKAN
 
-### Universitas Gadjah Mada — *Februari 2026 - Sekarang*
+**Universitas Gadjah Mada | Magister Ilmu Komputer** (Februari 2026 - Sekarang)
 
-Magister Ilmu Komputer (Master of Computer Science). Fokus riset: NLP, teknologi bahasa Indonesia, model bahasa berbasis transformer, analisis teks media sosial.
+**Universitas Muhammadiyah Semarang | Sarjana Informatika** (September 2020 - Agustus 2024)
 
-### Universitas Muhammadiyah Semarang — *September 2020 - Agustus 2024*
-
-Sarjana Informatika, IPK 3,93/4,00. Lulusan Terbaik Fakultas Teknik dan Ilmu Komputer pada Wisuda ke-44 (2024).
-
----
-
-## HOBI & PORTOFOLIO
-
-- **Fotografi (ponsel):** memotret dan mengelola hasil foto secara rutin. Portofolio: [instagram.com/haqiqien](https://instagram.com/haqiqien)
+- IPK 3,93/4,00
+- Lulusan Terbaik Fakultas Teknik dan Ilmu Komputer, Wisuda ke-44 (2024)
 
 ---
 
