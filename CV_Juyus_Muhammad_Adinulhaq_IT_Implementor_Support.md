@@ -23,7 +23,7 @@ Lulusan S1 Informatika Universitas Muhammadiyah Semarang (IPK 3,93/4,00) dan mah
 
 ## PENGALAMAN MAGANG
 
-**Web Developer (Magang), CV Fatih Corporindo** (Februari 2023 - Maret 2023)
+**Web Developer (Magang), CV Fatih Corporindo** (Januari 2023 - Maret 2023)
 
 - Membuat website company profile perusahaan menggunakan Laravel
 - Menyiapkan database serta menguji fitur-fitur pada website
